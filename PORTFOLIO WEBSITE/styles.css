@@ -1,0 +1,226 @@
+* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Section with Background Image */
+body {
+    font-family: 'Poppins', sans-serif; /* Modern and clean font */
+    background-image: url("C:/Users/27698/Pictures/PONTSHO/IMG-20230324-WA0024.jpg");
+    background-size: cover; /* Ensures image covers full viewport */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    background-position: center;
+    color: #fff; /* Text contrasts well against background image */
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.hero {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: blue;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: black;
+  margin: 15px 0;
+}
+
+.hero button {
+  background-color: purplered;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero button:hover {
+  background-color: green;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 2rem;
+  color: #3f51b5;
+}
+
+.card p {
+  color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black for contrast */
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff9800; /* Vibrant orange for the header text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Navigation Bar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8); /* Keeps the navbar visible over the background */
+    padding: 15px 0;
+    position: sticky; /* Stays at the top on scroll */
+    top: 0;
+    z-index: 999;
+}
+
+.navbar .logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Adds spacing between items */
+}
+
+.navbar ul li {
+    font-size: 1.1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff9800;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    color: #00e676; /* Vibrant green on hover */
+}
+
+/* Main Content Styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Section Styling */
+section {
+    background: rgba(255, 255, 255, 0.9); /* Adds a white overlay */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px; /* Prevents section from being too wide */
+    color: #333; /* Dark text for readability */
+}
+
+/* Headings Styling */
+h1 {
+    font-size: 2.2rem;
+    color: #4a148c; /* Deep purple for headings */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #3f51b5; /* Blue for subheadings */
+    margin-bottom: 10px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between form elements */
+}
+
+form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #4a148c;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #ff9800;
+}
+
+form button {
+    background-color: #4a148c;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #00e676; /* Green hover for buttons */
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    position: relative;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontsho Mathobela's Portfolio</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="https://images.pexels.com/photos/11035371/pexels-photo-11035371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                 alt="HTML 5 Logo" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#interests">Interests</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+      <!-- Home Section -->
+<section id="home">
+    <div class="hero">
+        <h1>Hi, I'm Pontsho Mathobela</h1>
+        <p>Crafting beautiful and functional web experiences.</p>
+        <button onclick="document.getElementById('projects').scrollIntoView()">View My Projects</button>
+    </div>
+    <div class="stats">
+        <div class="card">
+            <h2>2+</h2>
+            <p>Years Learning & Building</p>
+        </div>
+        <div class="card">
+            <h2>3+</h2>
+            <p>Projects Completed</p>
+        </div>
+        <div class="card">
+            <h2>HTML, CSS, Python, Mysql</h2>
+            <p>Skills Mastered</p>
+        </div>
+    </div>
+</section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Hi! I'm Pontsho, a web developer with a strong interest in aesthetics and user experience. My passion lies in creating websites that are not only functional but also engaging. Explore my journey and skills through this portfolio.</p>
+            <p>Educational Background: Matriculated in 2022 at Mathew Phosa Secondary School, Limpopo, South Africa. Currently studying Bachelor of Arts (Clinical Psychology) at the University of the Western Cape, 2023-present. Partaking in the February Cohort 2025 PLP: Present.</p>
+            <p>Skills: HTML, CSS, Python.</p>
+            <p><a href="C:\Users\27698\Desktop\PORTFOLIO WEBSITE\CV-Pontsho Mathobela.docx" download>Download My CV</a></p>
+        </section>
+
+        <!-- Interests Section -->
+        <section id="interests">
+            <h1>Interests</h1>
+            <ul>
+                <li>Web Development: Exploring modern frameworks and best practices.</li>
+                <li>Technical Writing: Improving readability and engagement for diverse audiences.</li>
+                <li>User Experience: Designing websites with accessible and user-friendly layouts.</li>
+                <li>Collaboration: Participating in challenges to refine skills and gain insights.</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h1>My Projects</h1>
+            <ul>
+                <li>
+                    <h2>Portfolio Website</h2>
+                    <p>A personal portfolio site showcasing my design skills and creativity.Using HTML&CSS</p>
+                </li>
+                <li>
+                    <h2>Basic Calculator</h2>
+                    <p>A simple calculator built with Python(back-end).</p>                  
+                </li>
+                <li>
+                    <h2>Database(Expense Tracker)</h2>
+                    <p>A simple database created using MySQL Workbench & SQL quires.</p>  
+                </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pontsho Mathobela. All rights reserved.</p>
+    </footer>
+</body>
+</html>
